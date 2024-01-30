@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.gradient-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/resrc-files/Scientistpic2.png");
+    background-size: cover;
+    flex-direction: column;
+}
+
+h1{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#fef08a  ;
+    font-size: 5em;
+    font-weight: bold;
+    letter-spacing: 7px;
+    cursor:pointer
+    
+  }
+  h1 span{
+    transition: .5s linear
+  }
+  h1:hover span:nth-child(1){
+    margin-right: 10px
+  }
+  h1:hover span:nth-child(1):after{
+    content: "PARISODHAN";
+  }
+  h1:hover span:nth-child(2){
+    margin-left: 10px
+  }
+  h1:hover span{
+    color: #94a3b8;
+    text-shadow: 0 0 10px #3b82f6 ;
+  }
+  
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    padding: 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: "Cute Font", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    position: relative;
+    color:#e5e5e5  ;
+}
+
+nav a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(45deg,#facc15  , #015aff );
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s;
+}
+
+nav a:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 6em;
+    }
+
+    nav ul {
+        font-size: 2em;
+    }
+}
