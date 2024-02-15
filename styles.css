@@ -4,14 +4,14 @@ body {
 }
 
 .gradient-container {
-    width: 100vw;
-    height: 100vh;
+   
     display: flex;
     justify-content: center;
     align-items: center;
     background-image: url("resrc-files/Scientistpic2.png");
     background-size: cover;
-    flex-direction: column;
+   height:100vh;
+   text-align: center;
 }
 
 h1{
@@ -52,7 +52,7 @@ h1{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    align-items: center;
+    
     z-index: 1000;
 }
 
