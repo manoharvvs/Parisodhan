@@ -1,3 +1,3 @@
 # Parisodhan
 
-@We all people are hear to do research on new trending technologies and to gain gain scientifical knowledge in efficient way.
+@The group of people who work on trending technologoes and do reasearch on futre technologies.
